@@ -1,4 +1,5 @@
 from flask import Flask, request
+from tree_logic import ParentChildNode
 # import request.
 app = Flask(__name__)
 
@@ -10,6 +11,7 @@ def hello():
 @app.route('/get_tree', methods=['POST'])
 def get_nodes():
     user = request.form['node1']
+    ParentChildNode().get_nodes('node1')
     return redirect(url_for('success',name = user))
     # return "fetched tress"
 
