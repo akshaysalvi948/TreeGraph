@@ -7,7 +7,7 @@ class ParentChildNode():
                                 'node_4' : ['5', '7']}
         
     def get_nodes(self, node_value):
-
+        
         output_dict = {}
         for p_key, p_value in self.graph.items():
             if p_key == node_value:
@@ -24,6 +24,6 @@ class ParentChildNode():
         return output_dict
     
     
-if __name__ == '__main__':
-    node_value = 'node_1'
-    ParentChildNode().get_nodes(node_value)
+# if __name__ == '__main__':
+#     node_value = 'node_1'
+#     ParentChildNode().get_nodes(node_value)
