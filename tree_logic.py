@@ -23,6 +23,16 @@ class ParentChildNode():
                 output_dict[p_key].append([p_key])
         return output_dict
     
+    def get_all_nodes():
+        # backpropagation logic
+        pass
+    
+    def ouputs():
+        
+        # first call fronpagation
+        #  if null than run back propagation
+        pass
+    
     
 # if __name__ == '__main__':
 #     node_value = 'node_1'
